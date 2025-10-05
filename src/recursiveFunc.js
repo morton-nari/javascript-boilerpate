@@ -1,6 +1,6 @@
 
 const interviewOne = () => {
-    /** create function that maps function to eact elemet of an array
+    /** create function that maps function to each elemet of an array
      * and returns a new array and provide a cube function which transform reach result
      * in the array as cubed - x*x*x recursion
      */
@@ -35,6 +35,13 @@ const interviewOne = () => {
 
     console.log(factorial(5));
 }
+
+// another factorial recursive function
+const factorialRec = function fac(num) {
+    return num < 2 ? 1 : num * fac(num - 1);
+}
+
+console.log(factorialRec(4));
 
 const user = {
     name: 'Morton',
